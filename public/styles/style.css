@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;700&display=swap');
+/*code for body styling */
+body {
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	
+    background-color: #f7f7f7;
+    background-image: linear-gradient(to bottom right, #3498db, #2ecc71);
+    background-size: 200% 200%;
+	height: 100vh;
+
+}
+
+/* header section */
+header {
+	display: flex;
+	align-items: center;
+	column-gap: 50px;
+	background-color: rgba(255,255,255,0.71);
+}
+
+header h1 {
+	font-weight: 700;
+	font-size: 32px;
+	margin: 0 0 0 35px;
+}
+header a {
+	text-decoration: none;
+	color: #ec7b71;
+}
+header a:hover {
+	color: #FF5733;
+}
+header ul li {
+	display: inline-block;
+	list-style: none;
+    font-size: 25px;
+}
+
+main{
+	min-height: 100vh;
+}
+
+.nav-buttons{
+	display: flex;
+	column-gap: 20px;
+}
+
+.btnGit {
+	border-color: #e34234;
+	color: #ec7b71;
+	transition: all 150ms ease-in-out;
+	padding: 5px 20px;
+	font-weight: 600;
+}
+.btnGit:hover{
+	
+	color: white;
+	background-color: #ec7b71;
+}
+
+.btnApi {
+	border-color: #e34234;
+	color: #71b7ec;
+	transition: all 150ms ease-in-out;
+	padding: 5px 20px;
+	font-weight: 600;
+
+}
+.btnApi:hover{
+	
+	color: white	;
+	background-color: #71b7ec;
+}
+
+.page-home main {
+	margin-top: 200px;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+/*main text in index */
+.maintxt {
+		
+	padding-top: 1em;
+	color: white;
+	font-size: 72px;
+    line-height: 1.1;
+    font-weight: 600;
+}
+/*buttons in index */
+.btns{
+	display: flex;
+	column-gap: 50px;
+	margin-top: 30px;
+}
+
+.btn {
+
+	text-decoration: none;
+	display: inline-block;
+    text-align: center;
+    color: white;
+    padding: 16px 22px;
+    font-size: 20px;
+    min-width: 100px;
+    border-radius: 15px;   
+    transition: all 0.3s ease;
+    border: 2px solid #ec7b71;
+    background:  transparent;   
+
+}
+
+.btn:hover {
+	opacity: 0.8;
+    background: #ec7b71;
+}
+
+.btn1 {
+
+	text-decoration: none;
+	display: inline-block;
+    text-align: center;
+    color: white;
+    padding: 16px 22px;
+    font-size: 20px;
+    min-width: 100px;
+    border-radius: 15px;   
+    transition: all 0.3s ease;
+    border: 2px solid rgb(68, 207, 121);
+    background:  transparent;  
+}
+
+.btn1:hover {
+	opacity: 0.8;
+    background:  rgb(68, 207, 121);
+}
+
+footer {
+	background-color: #222;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 50px;
+}
+
+.fcont {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 500;
+	color: white;
+	text-decoration: none;
+
+}
+/*centering content */
+.container {
+	max-width: 800px;
+	margin: auto; 
+    padding-top: 40px;
+}
+
+/*create page styling */
+.page-create h2 {
+	
+	font-size: 40px;
+	color: #fcfcfc;
+}
+/*input styling */
+.page-create input[type="text"],
+.page-create textarea {
+	width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+	
+}
+
+label.lbl {
+	font-size: 20px;
+	
+}
+/*buttons in create page */
+.btn2 {
+
+	text-decoration: none;
+	display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    padding: 15px 20px;
+    min-width: 100px;
+    border-radius: 10px;   
+    border: 2px;
+    background:  lightseagreen;
+
+    margin-top: 45px;
+	margin-left: 30px;
+
+}
+
+.btn3 {
+	text-decoration: none;
+	display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    padding: 15px 45px;
+    min-width: 100px;
+    border-radius: 10px;   
+    border: 2px;
+    background:  #ec7b71;   
+    transition: all 1s ease;
+    margin-top: 45px;
+
+}
+
+.btn3:hover {
+	opacity: 0.8;
+
+    background: lightseagreen;   
+   
+}
+
+.message {
+	max-width: 800px;
+	margin: auto; 
+	background-color:lightseagreen;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	text-align: center;
+	margin-top: 10px;
+}
+/*posts.pug styling */
+ul.posts-list {
+	list-style: none;
+	max-width: 800px;
+	margin: auto; 
+    padding-top: 40px;
+	padding-inline-start: 0px;
+
+}
+
+ul.posts-list li {
+	background-color: rgba(255,255,255,0.66);
+	border: 2px solid #ec7b71;
+	border-radius: 10px;
+    padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+ul.posts-list a {
+	text-decoration: none;
+}
+
+/*post.pug styling */
+h1.posttitle {
+	color: white;
+}
+
+a.post {
+	font-size: 30px;
+	font-weight: 500;
+	color: #28a745;
+}
+
+p.author {
+	font-size: 20px;	
+}
+
+p.post1{
+	font-size: 25px;
+}
+
+h1.post1{
+	color: #ec7b71;
+	font-size: 45px;
+}
+
+.post2{
+	color: white;
+	display: inline;
+	font-size: 35px;
+}
+
+.post1 {
+	border: 2px solid #ec7b71;
+	border-radius: 10px;
+    padding: 15px;
+}
+
+a.read {
+	text-decoration: none;
+	background-color: #3f51b5;
+	color: white;
+	padding: 9px 15px;
+	border-radius: 10px;
+}
+
+a.delete {
+	text-decoration: none;
+	background-color: #ec7b71;
+	color: white;
+	padding: 9px 15px;
+	border-radius: 10px;
+}
+
+.post-btns{
+	display: flex;
+	margin-top: 30px;
+	column-gap: 30px;
+}
+
+.posts-btns{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	row-gap: 25px;
+	font-size: 0.8rem;
+}
+
+.noposts{
+	color: red;
+}
+
+.post-body p:nth-child(1){
+	color: white;
+}
+.post-body p:nth-child(2){
+	border: 3px solid rgba(100,140,255);
+	border-radius: 10px;
+	padding: 15px;
+	color: white;
+}
+
+.post p {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.post-div{
+	background-color: #fff9;
+	padding: 24px;
+	border-radius: 15px;
+}
+
+.post h2 {
+	margin-top: 0;
+	font-size: 2.4rem;
+	margin-bottom: 10px;
+}
+
+.post-title{
+	margin: 0;
+}
+
+.postbtns{
+	justify-content: center;
+}
+
+.error-message {
+	border: 1px solid #f5c6cb;
+	background-color: #f8d7da;
+	color: #721c24;
+	font-size: 1.3rem;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.success-message {
+	background-color: #d4edda;
+	border: 1px solid #c3e6cb;
+	color: #155724;
+	font-size: 1.3rem;
+	padding: 10px;
+	margin-bottom: 20px;
+}
