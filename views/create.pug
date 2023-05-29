@@ -1,0 +1,23 @@
+extend home
+
+block content
+  h2(class='container') Create post
+
+    if show === '0'
+      p.error-message Error: All fields are required..
+    if show === '1'
+      p.success-message Post added successfully.
+  
+  form(method="post" action="/posts.app/create" class='container')
+    label(for="title").lbl Title
+    input(type="text" name="title" id="title" placeholder="Title of the text")
+
+    label(for="author").lbl Author 
+    input(type="text" name="author" id="author" placeholder="Your Name")
+
+    label(for="body").lbl Content
+    textarea(name="details" id="body" rows="10" placeholder="Your Text")
+
+    input(type="submit" value="Publish" class='btn3')
+    a(class='btn2' href='/').button Back
+  

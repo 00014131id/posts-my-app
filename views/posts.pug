@@ -1,0 +1,28 @@
+extend home
+
+block content
+
+  div.container
+    if posts
+      h1.posttitle All Posts
+      ul.posts-list
+        each post in posts
+          li.posts-div
+            div.posts-text
+              a(href="/posts1/" + post.id).post= post.title
+              p.author Author: #{post.author}
+            div.posts-btns
+              a(href="/posts1/" + post.id).read Read
+              a(href="/posts1/" + post.id + "/delete").delete Delete
+
+      div.btns
+        a(class='btn' href='/posts.app/create').button Create
+        a(class='btn1' href='/').button Back
+    else 
+      h1.noposts No posts created yet
+
+      a(class='btn' href='/posts.app/create').button Create
+      a(class='btn2' href='/').button Back
+
+    
+  

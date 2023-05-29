@@ -1,0 +1,14 @@
+extend home
+
+block content
+  div.container
+    div.post-div
+      h2.post-title #{post.title}
+      diiv.post-body
+        p Author: #{post.author}
+        p= post.body
+
+    div.btns.postbtns
+      a(href="/posts1/" + post.id + "/delete").btn Delete
+      a(href='/posts1').btn1 Back
+
