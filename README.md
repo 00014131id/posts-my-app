@@ -29,7 +29,7 @@ The Posts App relies on the following dependencies:
 
 For the source code of the Posts App, please refer to the [GitHub](https://github.com/00014131id/posts-my-app).
 
-You can also access the hosted application on [Glitch]().
+You can also access the hosted application on [Glitch](https://chrome-statuesque-thief.glitch.me/).
 
 ## License
 The Posts App is licensed under the ISC License. Refer to the LICENSE file in the repository for more information.
