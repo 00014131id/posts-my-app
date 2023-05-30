@@ -5,9 +5,9 @@ The Posts App is a straightforward web application designed for creating and man
 ## Installation
 To run the app locally, you need to have Node.js and npm installed on your system. Then, follow these steps:
 
-1. Clone this repository to your local machine:
+1. Clone this repository to your local machine using git bash or cmd:
 
-   ``git clone https://github.com/hanzogenji/posts-app.git``
+   ``git clone https://github.com/00014131id/posts-my-app``
 1. Navigate to the cloned repository: 
 
    ``cd posts-app``
@@ -21,7 +21,7 @@ To run the app locally, you need to have Node.js and npm installed on your syste
     ``http://localhost:8000``
 
 ## Dependencies
-The Posts App relies on the following dependencies:
+The Posts App uses the following dependencies:
 * Express (v4.18.2)
 * Pug (v3.0.2)
 
