@@ -7,7 +7,7 @@ To run the app locally, you need to have Node.js and npm installed on your syste
 
 1. Clone this repository to your local machine using git bash or cmd:
 
-   ``git clone https://github.com/00014131id/posts-my-app``
+   ``git clone https://github.com/00014131id/posts-my-app.git``
 1. Navigate to the cloned repository: 
 
    ``cd posts-app``
